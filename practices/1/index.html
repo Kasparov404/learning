@@ -1,71 +1,119 @@
-<style>
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Розклад пар</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-  th, td {
-    border: 1px solid black;
-    padding: 10px;
-  }
+    body {
+      background-color: #ffffff;
+      font-family: sans-serif;
+    }
 
-  th {
-    background-color: #ccc;
-  }
-</style>
+    .schedule {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
 
-<table class="schedule">
-  <thead>
-    <tr>
-      <th>День</th>
-      <th>Час</th>
-      <th>Група</th>
-      <th>Предмет</th>
-      <th>Викладач</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Понеділок</td>
-      <td>9:00-10:00</td>
-      <td>КІД-41</td>
-      <td>Математика</td>
-      <td>Петров І.В.</td>
-    </tr>
-    <tr>
-      <td>Понеділок</td>
-      <td>10:00-11:00</td>
-      <td>КІД-41</td>
-      <td>Українська мова</td>
-      <td>Іванова О.М.</td>
-    </tr>
-    <tr>
-      <td>Понеділок</td>
-      <td>11:00-12:00</td>
-      <td>КІД-41</td>
-      <td>Фізика</td>
-      <td>Сидоров М.В.</td>
-    </tr>
-    <tr>
-      <td>Вівторок</td>
-      <td>9:00-10:00</td>
-      <td>КІД-41</td>
-      <td>Історія України</td>
-      <td>Бойко В.І.</td>
-    </tr>
-    <tr>
-      <td>Вівторок</td>
-      <td>10:00-11:00</td>
-      <td>КІД-41</td>
-      <td>Біологія</td>
-      <td>Кравчук А.В.</td>
-    </tr>
-    <tr>
-      <td>Вівторок</td>
-      <td>11:00-12:00</td>
-      <td>КІД-41</td>
-      <td>Хімія</td>
-      <td>Дмитренко Н.П.</td>
-    </tr>
-  </tbody>
-</table>
+    .schedule table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    .schedule th, .schedule td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .schedule th {
+      background-color: #ccc;
+    }
+
+    .schedule input, .schedule select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .schedule input[type="submit"] {
+      background-color: #000;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="schedule">
+    <h1>Розклад уроків</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>День</th>
+          <th>Час</th>
+          <th>Клас</th>
+          <th>Предмет</th>
+          <th>Вчитель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Понеділок</td>
+          <td>9:00-10:00</td>
+          <td>10-А</td>
+          <td>Математика</td>
+          <td>Петров І.В.</td>
+        </tr>
+        <tr>
+          <td>Понеділок</td>
+          <td>10:00-11:00</td>
+          <td>10-Б</td>
+          <td>Українська мова</td>
+          <td>Іванова О.М.</td>
+        </tr>
+        <tr>
+          <td>Понеділок</td>
+          <td>11:00-12:00</td>
+          <td>10-В</td>
+          <td>Фізика</td>
+          <td>Сидоров М.В.</td>
+        </tr>
+        <tr>
+          <td>Вівторок</td>
+          <td>9:00-10:00</td>
+          <td>10-А</td>
+          <td>Історія України</td>
+          <td>Бойко В.І.</td>
+        </tr>
+        <tr>
+          <td>Вівторок</td>
+          <td>10:00-11:00</td>
+          <td>10-Б</td>
+          <td>Біологія</td>
+          <td>Кравчук А.В.</td>
+        </tr>
+        <tr>
+          <td>Вівторок</td>
+          <td>11:00-12:00</td>
+          <td>10-В</td>
+          <td>Хімія</td>
+          <td>Дмитренко Н.П.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <input type="submit" value="Відправити">
+  </div>
+</body
